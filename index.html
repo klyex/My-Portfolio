@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Personal portfolio of Kyla S. Jalique - BSIT student, developer, and aspiring designer. Showcase of projects, skills, and contact info.">
+    <title>Kyla S. Jalique | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Background glow elements for futuristic aesthetic -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo" id="logo-nav">
+                <span class="logo-accent">&lt;</span>K.J.<span class="logo-accent">/&gt;</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <svg class="hamburger" viewBox="0 0 24 24" width="24" height="24">
+                    <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" />
+                    <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-greeting-wrapper">
+                    <span class="hero-welcome">Hello there, welcome!</span>
+                    <span class="hero-badge">BSIT Student</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Kyla S. Jalique</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I build <span class="typewriter" id="typewriter-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    An ambitious IT student who loves building creative, user-friendly tech projects.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" id="hero-btn-projects">View Projects</a>
+                    <a href="#contact" class="btn btn-outline" id="hero-btn-contact">Get In Touch</a>
+                </div>
+            </div>
+
+            <!-- Hero Visual Graphic Element -->
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                        <span class="code-title">kyla_profile.js</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">const</span> student = {
+  name: <span class="code-string">"Kyla S. Jalique"</span>,
+  role: <span class="code-string">"BSIT Student"</span>,
+  college: <span class="code-string">"DNSC"</span>,
+  location: <span class="code-string">"Panabo City"</span>,
+  passions: [
+    <span class="code-string">"UI/UX Design"</span>, 
+    <span class="code-string">"Web Development"</span>,
+    <span class="code-string">"Creative Tech"</span>
+  ],
+  isAmbitious: <span class="code-boolean">true</span>
+};
+
+<span class="code-comment">// Ready to collaborate!</span>
+student.status = <span class="code-string">"Open to new ideas"</span>;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <a href="#about" aria-label="Scroll down to About section">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M19 12l-7 7-7-7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">01. Discovery</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <p class="paragraph-lead">
+                        Hi! I am a BSIT student who loves exploring how technology can solve real-world problems. Right
+                        now, I'm focusing on building my skills in web development.
+                    </p>
+                    <p>
+                        I really enjoy the process of learning new tools, collaborating with teams on project ideas, and
+                        designing things that make life easier and more secure for users.
+                    </p>
+                    <p>
+                        My academic journey at <strong>Davao del Norte State College</strong> teaches me how to combine
+                        technical structures with intuitive user interfaces. I believe that good code is not just
+                        functional, but also engaging and accessible.
+                    </p>
+                </div>
+
+                <!-- Quick Info Card Grid -->
+                <div class="about-card-grid">
+                    <div class="info-card glass-card">
+                        <div class="info-card-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+                            </svg>
+                        </div>
+                        <h3>Education</h3>
+                        <p class="info-card-main">BS Information Technology</p>
+                        <p class="info-card-sub">DNSC - 3rd Year Student</p>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-card-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <h3>Location</h3>
+                        <p class="info-card-main">Panabo City</p>
+                        <p class="info-card-sub">Davao del Norte, Philippines</p>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-card-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3>Role</h3>
+                        <p class="info-card-main">Aspiring Designer</p>
+                        <p class="info-card-sub">UI/UX & Web Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">02. Toolkit</span>
+                <h2 class="section-title">Skills &amp; Capabilities</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category: Web Basics -->
+                <div class="skills-category-card glass-card">
+                    <div class="category-header">
+                        <div class="category-icon cyan-glow">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                <polyline points="2 17 12 22 22 17" />
+                                <polyline points="2 12 12 17 22 12" />
+                            </svg>
+                        </div>
+                        <h3>Web Basics</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Basic Algorithms</span>
+
+                    </div>
+                </div>
+
+                <!-- Skill Category: Design & Tools -->
+                <div class="skills-category-card glass-card">
+                    <div class="category-header">
+                        <div class="category-icon violet-glow">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
+                                <path
+                                    d="M12 8C14.2091 8 16 6.20914 16 4C16 1.79086 14.2091 0 12 0C9.79086 0 8 1.79086 8 4C8 6.20914 9.79086 8 12 8Z" />
+                            </svg>
+                        </div>
+                        <h3>Design &amp; Tools</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VSCode</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Core IT Concepts -->
+                <div class="skills-category-card glass-card">
+                    <div class="category-header">
+                        <div class="category-icon green-glow">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <line x1="9" y1="3" x2="9" y2="21" />
+                                <line x1="9" y1="9" x2="21" y2="9" />
+                            </svg>
+                        </div>
+                        <h3>Core IT Concepts</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">System Layouts</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">03. Works</span>
+                <h2 class="section-title">Academic Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Year Tabs Buttons -->
+            <div class="projects-tabs">
+                <button class="tab-btn active" data-tab="year-1">1st Year</button>
+                <button class="tab-btn" data-tab="year-2">2nd Year</button>
+                <button class="tab-btn" data-tab="year-3">3rd Year</button>
+                <button class="tab-btn" data-tab="year-4">4th Year</button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="projects-tab-content">
+
+                <!-- Tab 1: 1st Year Projects -->
+                <div class="tab-pane active" id="year-1">
+                    <!-- First Semester Group -->
+                    <div class="semester-group">
+                        <h3 class="semester-heading">First Semester</h3>
+                        <div class="projects-grid">
+                            <!-- Project 1: UROM Short Film -->
+                            <article class="project-card glass-card">
+                                <div class="project-image-wrapper">
+                                    <img src="./assets/UROM_CINEMAGIC PRODUCTION_BSIT1B.jpg"
+                                        alt="UROM Short Film poster design mockup" class="project-image">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <span class="project-label">Project 01</span>
+                                        <h3 class="project-title">"UROM" Short Film &amp; Multimedia Project</h3>
+                                    </div>
+                                    <p class="project-description"
+                                        title="An award-winning collaborative short film developed for the IT111 Multimedia Festival by Cinemagic Production, showcasing digital storytelling and post-production skills.">
+                                        An award-winning collaborative short film developed for the IT111 Multimedia
+                                        Festival by Cinemagic Production, showcasing digital storytelling and
+                                        post-production skills.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">Multimedia</span>
+                                        <span class="tag">Video Production</span>
+                                        <span class="tag">Storytelling</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a href="https://drive.google.com/file/d/1AgoFl3o3YkTAlQdYACli2nh7FwE6R9px/view?usp=sharing"
+                                            target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-icon"
+                                            aria-label="Watch UROM short film video">
+                                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <polygon points="10 8 16 12 10 16 10 8" />
+                                            </svg>
+                                            Watch Video
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 2: Cry of Balintawak -->
+                            <article class="project-card glass-card">
+                                <div class="project-image-wrapper">
+                                    <img src="./assets/Screenshot 2026-06-04 012926.png" alt="Cry of Balintawak"
+                                        class="project-image">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <span class="project-label">Project 02</span>
+                                        <h3 class="project-title">Cry of Balintawak &amp; Multimedia Project</h3>
+                                    </div>
+                                    <p class="project-description"
+                                        title="SS112 - Reading in Philippine History. Directed and story written by Christial Misal. Final project of RPH.">
+                                        SS112 - Reading in Philippine History.
+                                        Directed and story written by Christial Misal.
+                                        Final project of RPH.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">Multimedia</span>
+                                        <span class="tag">Video Production</span>
+                                        <span class="tag">Storytelling</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <a href="https://drive.google.com/file/d/1H6p2EuUQeIzij9pM3b_VuWe-ZdSa30V2/view?usp=drive_link"
+                                            target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-icon"
+                                            aria-label="Watch Cry of Balintawak video">
+                                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <polygon points="10 8 16 12 10 16 10 8" />
+                                            </svg>
+                                            Watch Video
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 3: Exercise Record Management System -->
+                            <article class="project-card glass-card">
+                                <div class="project-image-wrapper">
+                                    <img src="./assets/Screenshot 2026-06-04 012513.png"
+                                        alt="Exercise Record Management System command line interface screenshot"
+                                        class="project-image">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <span class="project-label">Project 03</span>
+                                        <h3 class="project-title">Exercise Record Management System</h3>
+                                    </div>
+                                    <p class="project-description"
+                                        title="A programming project focused on workout session tracking. Designed to streamline fitness planning, routines, and data management for health enthusiasts.">
+                                        A programming project focused on workout session tracking. Designed to
+                                        streamline
+                                        fitness planning, routines, and data management for health enthusiasts.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">C++ / Programming 1</span>
+                                        <span class="tag">System Logic</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 4: Sample Website -->
+                            <article class="project-card glass-card">
+                                <div class="project-image-wrapper">
+                                    <img src="./assets/Screenshot 2026-06-04 013322.png" alt="Sample Website"
+                                        class="project-image">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <span class="project-label">Project 04</span>
+                                        <h3 class="project-title">Sample Website</h3>
+                                    </div>
+                                    <p class="project-description"
+                                        title="IT111 - Introduction to Computing. Our very first sample website we created, we use google site here. Google Sites is a free service provided by Google that allows users to create and share web pages with others.">
+                                        IT111 - Introduction to Computing.
+                                        Our very first sample website we created, we use google site here.
+                                        Google Sites is a free service provided by Google that allows users to create
+                                        and share web pages with others.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">IT111 / Introduction to Computing</span>
+                                        <span class="tag">Web Design</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Second Semester Group -->
+                    <div class="semester-group">
+                        <h3 class="semester-heading">Second Semester</h3>
+                        <div class="projects-grid">
+                            <!-- Project 5: Assignment using HTML and CSS -->
+                            <article class="project-card glass-card">
+                                <div class="project-image-wrapper">
+                                    <img src="./assets/Screenshot 2026-06-05 223819.png"
+                                        alt="Assignment using HTML and CSS dashboard preview" class="project-image">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <span class="project-label">Project 05</span>
+                                        <h3 class="project-title">Assignment using HTML and CSS</h3>
+                                    </div>
+                                    <p class="project-description"
+                                        title="This activity is based on theme of 'Dune' from W3Schools, where I need to modify the existing HTML and CSS code to reflect my own personal style and preferences.">
+                                        This activity is based on theme of 'Dune' from W3Schools, where I need to
+                                        modify the existing HTML and CSS code to reflect my own personal style and
+                                        preferences.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">HTML</span>
+                                        <span class="tag">CSS</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 6: Travel Tracker -->
+                            <article class="project-card glass-card">
+                                <div class="project-image-wrapper">
+                                    <img src="./assets/Screenshot 2026-06-05 224826.png"
+                                        alt="Instagram inspired Travel Tracker web layout screenshot"
+                                        class="project-image">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <span class="project-label">Project 06</span>
+                                        <h3 class="project-title">ITELECT Final Presentation (CRUD)</h3>
+                                    </div>
+                                    <p class="project-description"
+                                        title="Our team planned a project to develop a website that allows users to easily discover and explore new places to visit, inspired by the popular Instagram app. The platform will enable user to share their own travel experiences by posting 'spotted' locations, creating a community-driven hub for travelers and adventure seekers to connect and share their stories.">
+                                        Our team planned a project to develop a website that allows
+                                        users to easily discover and explore new places to visit, inspired
+                                        by the popular Instagram app. The platform will enable user to share
+                                        their own travel experiences by posting 'spotted' locations,
+                                        creating a community-driven hub for travelers and adventure seekers to
+                                        connect and share their stories.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">Web Design</span>
+                                        <span class="tag">Concept UI</span>
+                                        <span class="tag">CRUD Team Project</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 7: GUI -->
+                            <article class="project-card glass-card">
+                                <div class="project-image-wrapper">
+                                    <img src="./assets/Screenshot 2026-06-05 231349.png" alt="GUI screenshot"
+                                        class="project-image">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <span class="project-label">Project 07</span>
+                                        <h3 class="project-title">GUI</h3>
+                                    </div>
+                                    <p class="project-description"
+                                        title="The GUI serves as an intuitive interface for users to place their food and drink orders.">
+                                        The GUI serves as an intuitive interface for users to place their food and drink
+                                        orders.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">Java</span>
+                                        <span class="tag">GUI</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project 8: Gui  -->
+                            <article class="project-card glass-card">
+                                <div class="project-image-wrapper">
+                                    <img src="./assets/Screenshot 2026-06-05 231727.png" alt="GUI"
+                                        class="project-image">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <span class="project-label">Project 08</span>
+                                        <h3 class="project-title">GUI (Final Crud)</h3>
+                                    </div>
+                                    <p class="project-description"
+                                        title="The KKC: MOVIE TICKET BOOKING SYSTEM, aims to revolutionize the movie-going by providing a smooth online transaction for purchasing movie tickets. With the help of this, users will effortlessly use this method by browsing, exploring trailers, to select and secure their preferred seats with a few clicks, all from the comfort of their own devices. The system will provide real-time availability updates ensuring customers always have accurate access to their information. Additionally secure payment gateways will guarantee a safe and smooth transaction process, allowing users to purchase tickets with confidence. KKC serves both movie administrators and users. A more efficient method for tracking inventory and ticket sales will help movies cut expenses and increase productivity. Users on the other hand, will have the freedom and adaptability to book tickets anytime and anywhere ensuring they never miss out on their preferred movies.">
+                                        The KKC: MOVIE TICKET BOOKING SYSTEM, aims to revolutionize the
+                                        movie-going by providing a smooth online transaction for purchasing movie
+                                        tickets.
+                                        With the help of this, users will effortlessly use this method by browsing,
+                                        exploring
+                                        trailers, to select and secure their preferred seats with a few clicks, all from
+                                        the
+                                        comfort of their own devices. The system will provide real-time availability
+                                        updates
+                                        ensuring customers always have accurate access to their information.
+                                        Additionally secure
+                                        payment gateways will guarantee a safe and smooth transaction process, allowing
+                                        users to
+                                        purchase tickets with confidence. KKC serves both movie administrators and
+                                        users. A more
+                                        efficient method for tracking inventory and ticket sales will help movies cut
+                                        expenses and
+                                        increase productivity. Users on the other hand, will have the freedom and
+                                        adaptability to
+                                        book tickets anytime and anywhere ensuring they never miss out on their
+                                        preferred movies.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="tag">IT121</span>
+                                        <span class="tag">Java</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: 2nd Year Projects -->
+                <div class="tab-pane" id="year-2">
+                    <div class="projects-grid">
+                        <article class="project-card glass-card">
+                            <div class="project-image-wrapper">
+                                <img src="./assets/Screenshot 2026-06-06 134952.png"
+                                    alt="Coming soon preview placeholder" class="project-image">
+                                <!-- Tab 2: Project 01 -->
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <span class="project-label">Project 09</span>
+                                    <h3 class="project-title">Bumbilya Mobile Energy</h3>
+                                </div>
+                                <p class="project-description">
+                                    BUMBILYA is a digital platform designed to help people check how much
+                                    energy a building or company uses.It makes it easy to find where energy is
+                                    wasted and gives ideas to save energy and money. The app can be used by engineers,
+                                    companies, or homeowners to record energy data, see results, and make reports
+                                    quickly.
+                                    This tool enables users to perform assessments on various facilities, commercial,
+                                    industrial,
+                                    or residential through automated calculations, visual analytics, and customizable
+                                    audit reports.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Systems Design</span>
+                                    <span class="tag">Project Management</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass-card">
+                            <div class="project-image-wrapper">
+                                <img src="./assets/fdf88274-2cf9-43b4-90e3-da0ea0dc76bc.jpg"
+                                    alt="Coming soon preview placeholder" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <span class="project-label">Project 10</span>
+                                    <h3 class="project-title">PyroShield: IoT-Based RFID Access Control with
+                                        Automated Fire Alert System</h3>
+                                </div>
+                                <p class="project-description">
+                                    PyroShield also includes an IoT-based fire detection module that relies
+                                    on a heat sensor and temperature sensor to monitor ambient temperature levels.
+                                    The sensor continuously observes environmental conditions and triggers alerts when
+                                    abnormal temperature readings are detected, ensuring faster responses during
+                                    fire-related
+                                    incidents. The system focuses on early warning rather than direct fire suppression,
+                                    aligning
+                                    with the project’s goal of practicality and cost-effectiveness.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">IOT</span>
+                                    <span class="tag">Platform Technologies</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card glass-card">
+                            <div class="project-image-wrapper">
+                                <img src="./assets/462571352_1087429449710046_9043211938723558814_n.jpg"
+                                    alt="Coming soon preview placeholder" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <span class="project-label">Project 11</span>
+                                    <h3 class="project-title">"Cacao Stories: From Farm to Factory”
+                                        a Documentary Film by RealScope Visions (BSIT-2B Students)</h3>
+                                </div>
+                                <p class="project-description">
+                                    A final Project for SS113: The Contemporary World
+                                    Instructor: Razul Arboneda Atowan
+                                    Our documentary film focuses on the intricate journey of Cocoa,
+                                    tracing its path from local suppliers and distributors to the chocolate production
+                                    process implemented in factories located in Panabo City and farms in Davao City.
+                                    Prod Team:
+                                    yours truly : Director/Editor
+                                    Stephanie Losabia: Assistant Director/Location Manager
+                                    Kent Diether Geraldo: Field Director/Location Manager
+                                    Arjean G. Logrosa: Script Writer/Budget Manager
+                                    Ibañez, Grace: Interviewer
+                                    Kyla Jalique: Script Writer/Researcher
+                                    Maria Cristina Florida: Interviewer/Budget Manager
+                                    Herald Elivera: Technical Assistant
+                                    General, Arthur Jhun: Technical Assistant
+                                    Kenneth Lico: Cinematographer
+                                    Lozada, John Lyold: Interviewer/Researcher
+                                    Special thanks to Tehillah Chocolates and Geraldo's Cacao Farm
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Documentary Film</span>
+                                    <span class="tag">SS113</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://www.facebook.com/watch/?v=549344898028469" target="_blank"
+                                        rel="noopener noreferrer" class="btn btn-sm btn-icon"
+                                        aria-label="Watch Cacao Stories documentary video">
+                                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <polygon points="10 8 16 12 10 16 10 8" />
+                                        </svg>
+                                        Watch Video
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass-card">
+                            <div class="project-image-wrapper">
+                                <img src="./assets/79a78c48-1b1e-4509-a166-4994cb08296c.jpg"
+                                    alt="Shoptrace App screenshot" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <span class="project-label">Project 12</span>
+                                    <h3 class="project-title">Shoptrace: A Flutter-based Inventory &amp; Budget Tracking
+                                        Application</h3>
+                                </div>
+                                <p class="project-description">
+                                    Shoptrace is a simple yet powerful mobile app created with Flutter to
+                                    help small business owners and individuals stay organized with their inventory
+                                    and finances. Instead of using notebooks or scattered records, users can log
+                                    all their items in one place, including quantities, prices, and any changes that
+                                    happen over time.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Flutter</span>
+                                    <span class="tag">CRUD</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Tab 3: 3rd Year Projects -->
+                <div class="tab-pane" id="year-3">
+                    <div class="projects-grid">
+                        <article class="project-card glass-card">
+                            <div class="project-image-wrapper">
+                                <img src="./assets/Screenshot 2026-05-18 210319.png"
+                                    alt="In progress preview placeholder" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <span class="project-label">Project 13</span>
+                                    <h3 class="project-title">UniNest</h3>
+                                </div>
+                                <p class="project-description">
+                                    Technopreneurship -
+                                    UniNest is a centralized accommodation matching platform
+                                    made for students,by students.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Web Design</span>
+                                    <span class="tag">UI/UX Design</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://uni-nest-promotional-website.vercel.app/#home" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-icon"
+                                    aria-label="Watch Cacao Stories documentary video">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polygon points="10 8 16 12 10 16 10 8" />
+                                    </svg>
+                                    Visit Site
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass-card">
+                            <div class="project-image-wrapper">
+                                <img src="./assets/Screenshot 2026-06-06 204849.png"
+                                    alt="In progress preview placeholder" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <span class="project-label">Project 14</span>
+                                    <h3 class="project-title">Capstone Faculti-Wise</h3>
+                                </div>
+                                <p class="project-description">
+                                    Automated AI Timetabling and Faculty Load System for a Higher Education Institution.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Capstone</span>
+                                    <span class="tag">IT 323</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://faculti-wise.vercel.app/login" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-icon"
+                                    aria-label="Watch Cacao Stories documentary video">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polygon points="10 8 16 12 10 16 10 8" />
+                                    </svg>
+                                    Visit Site
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Tab 4: 4th Year Projects -->
+                <div class="tab-pane" id="year-4">
+                    <div class="banner-container">
+                        <div class="notification-banner glass-card">
+                            <div class="banner-icon">
+                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="12" y1="8" x2="12" y2="12" />
+                                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                                </svg>
+                            </div>
+                            <h3 class="banner-title">Not Available Yet</h3>
+                            <p class="banner-text">Currently completing my 3rd Year studies!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">04. Connection</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-card glass-card">
+                <div class="contact-text">
+                    <h3>Let's Collaborate!</h3>
+                    <p>I am always excited to discuss new project concepts, design ideas, or learning opportunities.
+                        Feel free to reach out via phone, email, or connect with me on social platforms.</p>
+                </div>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon cyan-glow">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span>Email Me</span>
+                            <a href="mailto:kyla.jalique@gmail.com" class="contact-link">jalique.kyla@dnsc.edu.ph</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon violet-glow">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span>Call Me</span>
+                            <a href="tel:09918345599" class="contact-link">0991 834 5599</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="https://github.com/klyex" target="_blank" rel="noopener noreferrer" class="social-btn"
+                        aria-label="Kyla's GitHub Profile">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container footer-container">
+            <p>&copy; 2026 Kyla S. Jalique. All Rights Reserved.</p>
+            <p class="footer-tagline">Designed &amp; Built with <span class="heart">&hearts;</span></p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
